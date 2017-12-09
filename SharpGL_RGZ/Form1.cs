@@ -14,11 +14,12 @@ namespace SharpGL_RGZ
          
         private readonly FigureHummer _figureHummer1 = new FigureHummer();
         private readonly FigureTable _figureTable = new FigureTable();
+        private readonly FigureDver _figureDver = new FigureDver();
         
         private Point _currentLocation = new Point(0, 0);
         private float _angleX;
         private float _angleY;
-        private float z;
+        private float z = -1f;
 
         private void openGLControl1_OpenGLDraw(object sender, RenderEventArgs args)
         {
@@ -37,9 +38,18 @@ namespace SharpGL_RGZ
             
             gl.LoadIdentity();
             _figureHummer1.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-            gl.LoadIdentity();
-            _figureTable.Draw(gl, 0, 0, -10f + z, _angleX, _angleY, 1f, 0);
             
+            gl.LoadIdentity();
+            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+                        
+            gl.LoadIdentity();
+            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
+
+            
+            gl.LoadIdentity();
+            gl.Translate(0, -0.125f, z);
+            var tea = new SharpGL.SceneGraph.Primitives.Teapot();
+            tea.Draw(gl, 14, 0.01, OpenGL.GL_FILL);
 
             gl.ShadeModel(OpenGL.GL_SMOOTH);
         }

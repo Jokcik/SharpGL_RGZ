@@ -18,12 +18,12 @@ namespace SharpGL_RGZ.figures
 
             var colors = new[]
             {
+                Color.FromArgb(255, 0, 128, 255),
                 Color.FromArgb(255, 255, 215, 0),
                 Color.FromArgb(255, 5, 128, 0),
                 Color.FromArgb(255, 255, 0, 64),
                 Color.FromArgb(255, 200, 0, 160),
                 Color.FromArgb(255, 60, 0, 64),
-                Color.FromArgb(255, 0, 128, 255),
                 Color.FromArgb(255, 100, 100, 100),
                 Color.Crimson
             };

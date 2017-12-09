@@ -57,6 +57,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="figures\FigureDver.cs" />
     <Compile Include="figures\FigureHummer.cs" />
     <Compile Include="figures\FigureParallelepiped.cs" />
     <Compile Include="figures\FigureTable.cs" />
@@ -101,6 +102,7 @@
     <Content Include="files\woodenHouse1.jpeg" />
     <Content Include="obj_file\Castle OBJ.obj" />
     <Content Include="obj_file\Country Side House.obj" />
+    <Content Include="obj_file\dver.obj" />
     <Content Include="obj_file\Table_01_stock.obj" />
     <Content Include="obj_file\WoodenHouse.Kathia.obj" />
     <Content Include="obj_file\WoodHouse.obj" />

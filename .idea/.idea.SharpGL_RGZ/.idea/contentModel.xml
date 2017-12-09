@@ -9,6 +9,7 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CjClutter.ObjLoader.Loader.dll" t="Include" />
         <e p="figures" t="Include">
+          <e p="FigureDver.cs" t="Include" />
           <e p="FigureHummer.cs" t="Include" />
           <e p="FigureParallelepiped.cs" t="Include" />
           <e p="FigureTable.cs" t="Include" />
@@ -26,6 +27,7 @@
         <e p="obj_file" t="Include">
           <e p="Castle OBJ.obj" t="Include" />
           <e p="Country Side House.obj" t="Include" />
+          <e p="dver.obj" t="Include" />
           <e p="Table_01_stock.obj" t="Include" />
           <e p="WoodenHouse.Kathia.obj" t="Include" />
           <e p="WoodHouse.obj" t="Include" />
