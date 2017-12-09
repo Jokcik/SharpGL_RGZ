@@ -1,0 +1,37 @@
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.exe.config
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.exe
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.pdb
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.dll
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.pdb
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.xml
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.pdb
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.xml
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.pdb
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.xml
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.csprojResolveAssemblyReference.cache
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.Form1.resources
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.Properties.Resources.resources
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.csproj.GenerateResource.Cache
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.exe
+c:\users\user\documents\visual studio 2017\Projects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.exe.config
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.exe
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL_RGZ.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.dll
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.dll
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.dll
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.xml
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.SceneGraph.xml
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\SharpGL.WinForms.xml
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.csprojResolveAssemblyReference.cache
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.Form1.resources
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.Properties.Resources.resources
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.csproj.GenerateResource.Cache
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.exe
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\obj\Debug\SharpGL_RGZ.pdb
+C:\Users\User\RiderProjects\SharpGL_RGZ\SharpGL_RGZ\bin\Debug\CjClutter.ObjLoader.Loader.dll

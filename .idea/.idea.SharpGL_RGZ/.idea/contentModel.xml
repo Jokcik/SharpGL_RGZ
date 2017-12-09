@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ContentModelStore">
+    <e p="C:\Users\User\.Rider2017.3\system\resharper-host\local\Transient\ReSharperHost\v11\SolutionCaches\_SharpGL_RGZ.1315377026.00" t="ExcludeRecursive" />
+    <e p="C:\Users\User\RiderProjects\SharpGL_RGZ" t="IncludeFlat">
+      <e p="packages" t="ExcludeRecursive" />
+      <e p="SharpGL_RGZ" t="IncludeRecursive">
+        <e p="App.config" t="Include" />
+        <e p="bin" t="ExcludeRecursive" />
+        <e p="CjClutter.ObjLoader.Loader.dll" t="Include" />
+        <e p="figures" t="Include">
+          <e p="FigureHummer.cs" t="Include" />
+          <e p="FigureParallelepiped.cs" t="Include" />
+          <e p="FigureTable.cs" t="Include" />
+          <e p="LoadPrimitive.cs" t="Include" />
+          <e p="Polygon.cs" t="Include" />
+        </e>
+        <e p="files" t="Include">
+          <e p="wooden.jpeg" t="Include" />
+          <e p="woodenHouse1.jpeg" t="Include" />
+        </e>
+        <e p="Form1.cs" t="Include" />
+        <e p="Form1.Designer.cs" t="Include" />
+        <e p="Form1.resx" t="Include" />
+        <e p="obj" t="ExcludeRecursive" />
+        <e p="obj_file" t="Include">
+          <e p="Castle OBJ.obj" t="Include" />
+          <e p="Country Side House.obj" t="Include" />
+          <e p="Table_01_stock.obj" t="Include" />
+          <e p="WoodenHouse.Kathia.obj" t="Include" />
+          <e p="WoodHouse.obj" t="Include" />
+        </e>
+        <e p="Program.cs" t="Include" />
+        <e p="Properties" t="Include">
+          <e p="AssemblyInfo.cs" t="Include" />
+          <e p="Resources.Designer.cs" t="Include" />
+          <e p="Resources.resx" t="Include" />
+          <e p="Settings.Designer.cs" t="Include" />
+          <e p="Settings.settings" t="Include" />
+        </e>
+        <e p="SharpGL_RGZ.csproj" t="IncludeRecursive" />
+      </e>
+      <e p="SharpGL_RGZ.sln" t="IncludeFlat" />
+    </e>
+  </component>
+</project>
