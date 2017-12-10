@@ -95,6 +95,12 @@ namespace SharpGL_RGZ
             _figureFonar2.Draw(gl, _l2pos[0] + 0.006f, _l2pos[1] - 0.1f, _l2pos[2], 0, 0, 0.03f, 0);
             gl.LoadIdentity();
             
+            gl.LoadIdentity();
+            _figureCloud.Draw(gl, -0.5f, 1.5f, -5.55f);
+            gl.LoadIdentity();
+            _figureCloud.Draw(gl, 2.5f, 1.5f, -5.55f);
+            
+            
             if (checkBox1.Checked)
             {
                 gl.Enable(OpenGL.GL_LIGHT0);
@@ -122,20 +128,18 @@ namespace SharpGL_RGZ
                 gl.Disable(OpenGL.GL_LIGHT2);                
             }
             
-//            gl.LoadIdentity();
-//            _figureHouse.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-//            gl.LoadIdentity();
-//            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-//            gl.LoadIdentity();
-//            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
-//            gl.LoadIdentity();
-//            _figureParallelepiped.Draw(gl, 0.29f, -0.13f, -0.55f);
-//            gl.LoadIdentity();
-//            _figureTriangle.Draw(gl, 0.29f, -0.04f, -0.55f);    
+            gl.LoadIdentity();
+            _figureHouse.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+            gl.LoadIdentity();
+            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+            gl.LoadIdentity();
+            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
+            gl.LoadIdentity();
+            _figureParallelepiped.Draw(gl, 0.29f, -0.13f, -0.55f);
+            gl.LoadIdentity();
+            _figureTriangle.Draw(gl, 0.29f, -0.04f, -0.55f);    
             gl.LoadIdentity();
             _figureHummer.Draw(gl, -0.29f, -0.17f, -0.55f);
-            gl.LoadIdentity();
-            _figureCloud.Draw(gl, 0f, 0f, -5.55f);
             
             gl.LoadIdentity();
             _figureTrava1.Draw(gl, 0, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
