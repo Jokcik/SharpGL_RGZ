@@ -13,8 +13,11 @@ namespace SharpGL_RGZ
         }
          
         private readonly FigureHouse _figureHouse = new FigureHouse();
+        private readonly FigureHummer _figureHummer = new FigureHummer();
         private readonly FigureTable _figureTable = new FigureTable();
         private readonly FigureDver _figureDver = new FigureDver();
+        private readonly FigureParallelepiped _figureParallelepiped = new FigureParallelepiped();
+        private readonly FigureTriangle _figureTriangle = new FigureTriangle();
         
         private Point _currentLocation = new Point(0, 0);
         private float _angleX;
@@ -30,6 +33,8 @@ namespace SharpGL_RGZ
         private readonly FigureFonar _figureFonar1 = new FigureFonar();
         private readonly FigureFonar _figureFonar2 = new FigureFonar();
 
+        private readonly FigureTrava _figureTrava1 = new FigureTrava();
+        private readonly FigureCloud _figureCloud = new FigureCloud();
         
         private float[] _l0pos = {-1.3f, 0.7f, -2.5f, 1.0f};
         private float[] _l1pos = {-0.34f, -0.08f, -0.95f, 1.0f};
@@ -39,9 +44,9 @@ namespace SharpGL_RGZ
         private float[] _light0Ambient = {0.8f, 0.8f, 0.8f, 1f};
         private float[] _light0Diffuse = {1f, 1f, 1f, 1f};
         
-        private float[] _light1Scpecular = {0.1f, 0.1f, 0.1f, 0.5f};
-        private float[] _light1Ambient = {0.1f, 0.1f, 0.1f, 0.5f};
-        private float[] _light1Diffuse = {0.1f, 0.1f, 0.1f, 0.5f};
+        private float[] _light1Scpecular = {1f, 1f, 1f, 1f};
+        private float[] _light1Ambient = {0.5f, 0.5f, 0.5f, 1f};
+        private float[] _light1Diffuse = {0.6f, 0.6f, 0.6f, 0.6f};
         
         private float[] _light2Scpecular = {0.1f, 0.1f, 0.1f, 0.5f};
         private float[] _light2Ambient = {0.1f, 0.1f, 0.1f, 0.5f};
@@ -117,14 +122,32 @@ namespace SharpGL_RGZ
                 gl.Disable(OpenGL.GL_LIGHT2);                
             }
             
+//            gl.LoadIdentity();
+//            _figureHouse.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+//            gl.LoadIdentity();
+//            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+//            gl.LoadIdentity();
+//            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
+//            gl.LoadIdentity();
+//            _figureParallelepiped.Draw(gl, 0.29f, -0.13f, -0.55f);
+//            gl.LoadIdentity();
+//            _figureTriangle.Draw(gl, 0.29f, -0.04f, -0.55f);    
             gl.LoadIdentity();
-            _figureHouse.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
+            _figureHummer.Draw(gl, -0.29f, -0.17f, -0.55f);
+            gl.LoadIdentity();
+            _figureCloud.Draw(gl, 0f, 0f, -5.55f);
             
             gl.LoadIdentity();
-            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-                        
+            _figureTrava1.Draw(gl, 0, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
             gl.LoadIdentity();
-            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
+            _figureTrava1.Draw(gl, 1f, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
+            gl.LoadIdentity();
+            _figureTrava1.Draw(gl, -1f, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
+            gl.LoadIdentity();
+            _figureTrava1.Draw(gl, -1.6f, -0.55f, z - 3f, _angleX, 0, 0.5f, 0);
+            gl.LoadIdentity();
+            _figureTrava1.Draw(gl, 1.6f, -0.55f, z - 3f, _angleX, 0, 0.5f, 0);
+            
             
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, _light0Diffuse);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_AMBIENT, _light0Ambient);
@@ -147,7 +170,7 @@ namespace SharpGL_RGZ
             
             gl.ColorMaterial(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_AMBIENT_AND_DIFFUSE);
             gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SPECULAR, _sRef);
-            gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SHININESS, 128);
+            gl.Material(OpenGL.GL_FRONT_AND_BACK, OpenGL.GL_SHININESS, 64);
         
             gl.ShadeModel(OpenGL.GL_SMOOTH);
         }

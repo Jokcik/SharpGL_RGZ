@@ -9,12 +9,16 @@
         <e p="bin" t="ExcludeRecursive" />
         <e p="CjClutter.ObjLoader.Loader.dll" t="Include" />
         <e p="figures" t="Include">
+          <e p="FigureCloud.cs" t="Include" />
           <e p="FigureDver.cs" t="Include" />
           <e p="FigureFonar.cs" t="Include" />
           <e p="FigureHouse.cs" t="Include" />
+          <e p="FigureHummer.cs" t="Include" />
           <e p="FigureParallelepiped.cs" t="Include" />
           <e p="FigureSphere.cs" t="Include" />
           <e p="FigureTable.cs" t="Include" />
+          <e p="FigureTrava.cs" t="Include" />
+          <e p="FigureTriangle.cs" t="Include" />
           <e p="LoadPrimitive.cs" t="Include" />
           <e p="Polygon.cs" t="Include" />
         </e>
@@ -27,10 +31,12 @@
         <e p="Form1.resx" t="Include" />
         <e p="obj" t="ExcludeRecursive" />
         <e p="obj_file" t="Include">
+          <e p="3DCloudModels.obj" t="Include" />
           <e p="Castle OBJ.obj" t="Include" />
           <e p="Country Side House.obj" t="Include" />
           <e p="dver.obj" t="Include" />
           <e p="Grass MWVizwork.obj" t="Include" />
+          <e p="Hammer.obj" t="Include" />
           <e p="Jubilife City Street Lamp.obj" t="Include" />
           <e p="sphere.obj" t="Include" />
           <e p="Table_01_stock.obj" t="Include" />

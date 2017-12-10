@@ -23,9 +23,10 @@ namespace SharpGL_RGZ.figures
         public void Draw(OpenGL gl, float ta, float ty, float tz)
         {
             _texture.Create(gl, "C:\\Users\\User\\RiderProjects\\SharpGL_7\\SharpGL_7\\files\\12387996.jpg");
-            var scale = 0.6f * 1;
+            var scale = 0.06f * 1;
             
             gl.Translate(ta, ty, tz);
+            gl.Rotate(30, 0, 1f, 0);
 //            gl.LookAt(0, 0, z, 0, 0, z + 10, 0 , 1, 0);
             gl.Scale(scale, scale, scale);
 
@@ -68,7 +69,8 @@ namespace SharpGL_RGZ.figures
                 
 
                 gl.End();
-
+            _texture.Destroy(gl);
         }
+        
     }
 }

@@ -57,12 +57,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="figures\FigureCloud.cs" />
     <Compile Include="figures\FigureDver.cs" />
     <Compile Include="figures\FigureFonar.cs" />
     <Compile Include="figures\FigureHouse.cs" />
+    <Compile Include="figures\FigureHummer.cs" />
     <Compile Include="figures\FigureParallelepiped.cs" />
     <Compile Include="figures\FigureSphere.cs" />
     <Compile Include="figures\FigureTable.cs" />
+    <Compile Include="figures\FigureTrava.cs" />
+    <Compile Include="figures\FigureTriangle.cs" />
     <Compile Include="figures\LoadPrimitive.cs" />
     <Compile Include="figures\Polygon.cs" />
     <Compile Include="Form1.cs">
@@ -102,10 +106,12 @@
     <Content Include="CjClutter.ObjLoader.Loader.dll" />
     <Content Include="files\wooden.jpeg" />
     <Content Include="files\woodenHouse1.jpeg" />
+    <Content Include="obj_file\3DCloudModels.obj" />
     <Content Include="obj_file\Castle OBJ.obj" />
     <Content Include="obj_file\Country Side House.obj" />
     <Content Include="obj_file\dver.obj" />
     <Content Include="obj_file\Grass MWVizwork.obj" />
+    <Content Include="obj_file\Hammer.obj" />
     <Content Include="obj_file\Jubilife City Street Lamp.obj" />
     <Content Include="obj_file\sphere.obj" />
     <Content Include="obj_file\Table_01_stock.obj" />
