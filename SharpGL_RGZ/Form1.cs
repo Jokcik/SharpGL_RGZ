@@ -29,12 +29,17 @@ namespace SharpGL_RGZ
         private readonly FigureSphere _figureSphere1 = new FigureSphere();
         private readonly FigureSphere _figureSphere2 = new FigureSphere();
         private readonly FigureSphere _figureSphere3 = new FigureSphere();
-
+        
         private readonly FigureFonar _figureFonar1 = new FigureFonar();
         private readonly FigureFonar _figureFonar2 = new FigureFonar();
 
         private readonly FigureTrava _figureTrava1 = new FigureTrava();
+        private readonly FigureTrava _figureTrava2 = new FigureTrava();
+        private readonly FigureTrava _figureTrava3 = new FigureTrava();
+        private readonly FigureTrava _figureTrava4 = new FigureTrava();
+        private readonly FigureTrava _figureTrava5 = new FigureTrava();
         private readonly FigureCloud _figureCloud = new FigureCloud();
+        private readonly FigureEarth2 _figureEarth2 = new FigureEarth2();
         
         private float[] _l0pos = {-1.3f, 0.7f, -2.5f, 1.0f};
         private float[] _l1pos = {-0.34f, -0.08f, -0.95f, 1.0f};
@@ -69,7 +74,7 @@ namespace SharpGL_RGZ
 //            gl.LightModel(OpenGL.GL_LIGHT_MODEL_AMBIENT, _black);
             
             gl.Clear(OpenGL.GL_COLOR_BUFFER_BIT | OpenGL.GL_DEPTH_BUFFER_BIT);
-            gl.ClearColor(1f, 1f, 1f, 1f);
+            gl.ClearColor(0.5f, 0.5f, 0.5f, 1f);
             
             gl.Enable(OpenGL.GL_BLEND);           // Разрешить прозрачность.
             gl.Enable(OpenGL.GL_POINT_SMOOTH);   // Разрешить сглаживание точек.
@@ -78,27 +83,29 @@ namespace SharpGL_RGZ
             gl.PointSize(16);             // Размер точки.
             gl.LineWidth(2);              // Толщина линий.
         
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_POSITION, _l0pos);
             _figureSphere1.Draw(gl, _l0pos[0], _l0pos[1], _l0pos[2], 0, 0, 2f, 0);
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             
             gl.Light(OpenGL.GL_LIGHT1, OpenGL.GL_POSITION, _l1pos);
 //            _figureSphere2.Draw(gl, _l1pos[0], _l1pos[1], _l1pos[2], 0, 0, 0.1f, 0);
-//            gl.LoadIdentity();
-            _figureFonar1.Draw(gl, _l1pos[0] - 0.006f, _l1pos[1] - 0.1f, _l1pos[2], 0, 0, 0.03f, 0);
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureFonar1.Draw(gl, _l1pos[0] - 0.006f, _l1pos[1] - 0.1f, _l1pos[2] + z + 1f, 0, 0, 0.03f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
 
             gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_POSITION, _l2pos);
 //            _figureSphere3.Draw(gl, _l2pos[0], _l2pos[1], _l2pos[2], 0, 0, 0.1f, 0);
-//            gl.LoadIdentity();
-            _figureFonar2.Draw(gl, _l2pos[0] + 0.006f, _l2pos[1] - 0.1f, _l2pos[2], 0, 0, 0.03f, 0);
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureFonar2.Draw(gl, _l2pos[0] + 0.006f, _l2pos[1] - 0.1f, _l2pos[2] + z + 1f, 0, 0, 0.03f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             _figureCloud.Draw(gl, -0.5f, 1.5f, -5.55f);
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             _figureCloud.Draw(gl, 2.5f, 1.5f, -5.55f);
+//            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+//            _figureEarth.Draw(gl, 0f, -0.1f, -1f);
             
             
             if (checkBox1.Checked)
@@ -128,29 +135,32 @@ namespace SharpGL_RGZ
                 gl.Disable(OpenGL.GL_LIGHT2);                
             }
             
-            gl.LoadIdentity();
-            _figureHouse.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-            gl.LoadIdentity();
-            _figureTable.Draw(gl, 0, 0, z, _angleX, _angleY, 1f, 0);
-            gl.LoadIdentity();
-            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
-            gl.LoadIdentity();
-            _figureParallelepiped.Draw(gl, 0.29f, -0.13f, -0.55f);
-            gl.LoadIdentity();
-            _figureTriangle.Draw(gl, 0.29f, -0.04f, -0.55f);    
-            gl.LoadIdentity();
-            _figureHummer.Draw(gl, -0.29f, -0.17f, -0.55f);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureHouse.Draw(gl, 0, 0, z, 0, 0, 1f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTable.Draw(gl, 0, 0, z, 0, 0, 1f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+//            _figureDver.Draw(gl, 0, 0, 0.16f + z, _angleX, _angleY, 1f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureParallelepiped.Draw(gl, 0.29f, -0.13f, -0.55f + z + 1f);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTriangle.Draw(gl, 0.29f, -0.04f, -0.55f + z + 1f);    
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureHummer.Draw(gl, -0.29f, -0.17f, -0.55f + z + 1f);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureEarth2.Draw(gl, -0.29f, 10, -2.0f);
             
-            gl.LoadIdentity();
-            _figureTrava1.Draw(gl, 0, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
-            gl.LoadIdentity();
-            _figureTrava1.Draw(gl, 1f, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
-            gl.LoadIdentity();
-            _figureTrava1.Draw(gl, -1f, -0.55f, z - 1f, _angleX, 0, 0.5f, 0);
-            gl.LoadIdentity();
-            _figureTrava1.Draw(gl, -1.6f, -0.55f, z - 3f, _angleX, 0, 0.5f, 0);
-            gl.LoadIdentity();
-            _figureTrava1.Draw(gl, 1.6f, -0.55f, z - 3f, _angleX, 0, 0.5f, 0);
+            
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTrava1.Draw(gl, 0, -0.55f, 2 * z - 1f, 0, 0, 0.5f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTrava2.Draw(gl, 1f, -0.55f, z - 1f, 0, 0, 0.5f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTrava3.Draw(gl, -1f, -0.55f, 2 * z - 1f, 0, 0, 0.5f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTrava4.Draw(gl, -1.6f, -0.55f, 2 * z - 3f, 0, 0, 0.5f, 0);
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
+            _figureTrava5.Draw(gl, 1.6f, -0.55f, 2 * z - 3f, 0, 0, 0.5f, 0);
             
             
             gl.Light(OpenGL.GL_LIGHT0, OpenGL.GL_DIFFUSE, _light0Diffuse);
@@ -166,7 +176,7 @@ namespace SharpGL_RGZ
             gl.Light(OpenGL.GL_LIGHT2, OpenGL.GL_SPECULAR, _light2Scpecular);
             
             gl.Color(0.5f, 0.5f, 0.5f);
-            gl.LoadIdentity();
+            gl.LoadIdentity(); gl.Rotate(_angleX, 1f, 0f, 0f); gl.Rotate(_angleY, 0f, 1f, 0f);
             gl.Translate(0, -0.125f, z);
             var tea = new SharpGL.SceneGraph.Primitives.Teapot();
             tea.Draw(gl, 14, 0.01, OpenGL.GL_FILL);
@@ -195,7 +205,7 @@ namespace SharpGL_RGZ
         
         protected override void OnMouseWheel(MouseEventArgs e)
         {
-            z += e.Delta > 0 ? 0.1f : -0.1f;
+            z += e.Delta > 0 ? -0.1f : 0.1f;
             base.OnMouseWheel(e);
         }
         
@@ -243,46 +253,6 @@ namespace SharpGL_RGZ
                     else
                     {
                         z1 -= 0.01f;
-                    }
-                    break;
-                case Keys.A:
-                    if (e.Shift)
-                    {
-                        x2 += 0.05f;
-                    }
-                    else
-                    {
-                        x2 -= 0.05f;
-                    }
-                    break;
-                case Keys.S:
-                    if (e.Shift)
-                    {
-                        y2 += 0.05f;
-                    }
-                    else
-                    {
-                        y2 -= 0.05f;
-                    }
-                    break;
-                case Keys.Z:
-                    if (e.Shift)
-                    {
-                        x3 += 0.05f;
-                    }
-                    else
-                    {
-                        x3 -= 0.05f;
-                    }
-                    break;
-                case Keys.X:
-                    if (e.Shift)
-                    {
-                        y3 += 0.05f;
-                    }
-                    else
-                    {
-                        y3 -= 0.05f;
                     }
                     break;
             }

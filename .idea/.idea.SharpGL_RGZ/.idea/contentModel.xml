@@ -11,6 +11,8 @@
         <e p="figures" t="Include">
           <e p="FigureCloud.cs" t="Include" />
           <e p="FigureDver.cs" t="Include" />
+          <e p="FigureEarth.cs" t="Include" />
+          <e p="FigureEarth2.cs" t="Include" />
           <e p="FigureFonar.cs" t="Include" />
           <e p="FigureHouse.cs" t="Include" />
           <e p="FigureHummer.cs" t="Include" />
@@ -38,6 +40,7 @@
           <e p="Grass MWVizwork.obj" t="Include" />
           <e p="Hammer.obj" t="Include" />
           <e p="Jubilife City Street Lamp.obj" t="Include" />
+          <e p="Rockwall.obj" t="Include" />
           <e p="sphere.obj" t="Include" />
           <e p="Table_01_stock.obj" t="Include" />
           <e p="WoodenHouse.Kathia.obj" t="Include" />
@@ -52,6 +55,7 @@
           <e p="Settings.settings" t="Include" />
         </e>
         <e p="SharpGL_RGZ.csproj" t="IncludeRecursive" />
+        <e p="РГЗ по компьютерной графике.docx" t="Include" />
       </e>
       <e p="SharpGL_RGZ.sln" t="IncludeFlat" />
     </e>

@@ -59,6 +59,8 @@
   <ItemGroup>
     <Compile Include="figures\FigureCloud.cs" />
     <Compile Include="figures\FigureDver.cs" />
+    <Compile Include="figures\FigureEarth.cs" />
+    <Compile Include="figures\FigureEarth2.cs" />
     <Compile Include="figures\FigureFonar.cs" />
     <Compile Include="figures\FigureHouse.cs" />
     <Compile Include="figures\FigureHummer.cs" />
@@ -113,10 +115,12 @@
     <Content Include="obj_file\Grass MWVizwork.obj" />
     <Content Include="obj_file\Hammer.obj" />
     <Content Include="obj_file\Jubilife City Street Lamp.obj" />
+    <Content Include="obj_file\Rockwall.obj" />
     <Content Include="obj_file\sphere.obj" />
     <Content Include="obj_file\Table_01_stock.obj" />
     <Content Include="obj_file\WoodenHouse.Kathia.obj" />
     <Content Include="obj_file\WoodHouse.obj" />
+    <Content Include="РГЗ по компьютерной графике.docx" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

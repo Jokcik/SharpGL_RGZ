@@ -43,8 +43,8 @@ namespace SharpGL_RGZ.figures
 
             gl.Translate(ta, ty -0.14f, tz);
             gl.Scale(scale, scale, scale);
-            gl.Rotate(angleX, 1f, 0f, 0f);
-            gl.Rotate(angleY, 0f, 1f, 0f);
+//            gl.Rotate(angleX, 1f, 0f, 0f);
+//            gl.Rotate(angleY, 0f, 1f, 0f);
             gl.Translate(-xc, -yc, -zc);
             foreach (var polygon in _polygons)
             {
